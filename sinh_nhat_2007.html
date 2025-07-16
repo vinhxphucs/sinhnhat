@@ -2,6 +2,7 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Happy Birthday My Love</title>
   <style>
     body {
@@ -16,21 +17,22 @@
 
     h1 {
       margin-top: 30px;
-      font-size: 60px;
+      font-size: 7vw;
       color: #ff69b4;
       text-shadow: 2px 2px #fff;
     }
 
     p {
-      font-size: 22px;
-      max-width: 800px;
+      font-size: 4vw;
+      max-width: 90%;
       margin: 20px auto;
       line-height: 1.6;
     }
 
     .love-photo {
       margin: 30px auto;
-      width: 300px;
+      width: 60%;
+      max-width: 300px;
       border-radius: 20px;
       box-shadow: 0 0 30px rgba(255, 105, 180, 0.7);
       transition: transform 0.4s;
@@ -52,21 +54,23 @@
 
     .heart {
       position: absolute;
-      width: 30px;
-      height: 30px;
+      width: 24px;
+      height: 24px;
       background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Emoji_u2764.svg/32px-Emoji_u2764.svg.png') no-repeat;
       background-size: contain;
       animation: fall 10s linear infinite;
-      opacity: 0.7;
+      opacity: 0.6;
     }
 
     @keyframes fall {
-      0% {transform: translateY(-50px);}
-      100% {transform: translateY(100vh);}
+      0% { transform: translateY(-50px); }
+      100% { transform: translateY(100vh); }
     }
 
     audio {
       margin-top: 20px;
+      width: 90%;
+      max-width: 400px;
     }
   </style>
 </head>
@@ -74,22 +78,21 @@
 
   <h1>🎉 Happy Birthday My Love 🎉</h1>
   <p>Chúc em một ngày 20/07 thật đặc biệt,<br>
-  ngập tràn yêu thương, tiếng cười và những điều tuyệt vời nhất!<br>
-  Anh yêu em rất nhiều 💖</p>
+     Tràn đầy yêu thương, tiếng cười và thật nhiều thành công!<br>
+     Anh yêu em rất nhiều 💖</p>
 
-  <!-- Ảnh của hai bạn -->
+  <!-- Đổi đường dẫn ảnh tại đây -->
   <img src="vy-2007.jpg" alt="Ảnh của chúng ta" class="love-photo">
-  <!-- 👉 Thay đường dẫn ảnh (có thể dùng ảnh online hoặc ảnh trong cùng thư mục) -->
 
   <!-- Nhạc nền -->
-  <audio controls autoplay loop>
-    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+  <audio controls autoplay loop hidden>
+    <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg">
     Trình duyệt không hỗ trợ phát nhạc.
   </audio>
 
   <div class="hearts">
     <script>
-      for(let i = 0; i < 40; i++) {
+      for(let i = 0; i < 30; i++) {
         let heart = document.createElement('div');
         heart.classList.add('heart');
         heart.style.left = Math.random() * 100 + 'vw';
@@ -98,5 +101,6 @@
       }
     </script>
   </div>
+
 </body>
 </html>
